@@ -1,0 +1,170 @@
+body{
+    background-color: #f5f5f5;
+    color: black;
+    font-family:Verdana;
+}
+
+.top-page {
+    width:100%;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #3e4346;
+}
+
+a{
+    text-align: center;
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color:white;
+    padding: 20px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+    color: darkgray;
+    cursor: pointer;
+}
+
+.logo {
+    font-family: 'Marck Script', cursive;
+    src: url('src/MarckScript-Regular.ttf');
+    font-size: 65px;
+    line-height: 120px;
+}
+
+.logo a {
+    color: #508fe2;
+    width:100%;
+    vertical-align: middle;
+    font-size:6vw;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #508fe2;
+    overflow: auto;
+  }
+  
+.navbar a {
+    float: left;
+    font-size: 17px;
+    width: 12.5%;
+}
+
+.unstyled {
+    list-style: none;
+}
+
+.tile {
+    background-color: white;
+    border:1px solid #dcdcdc
+}
+
+.center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.tile div a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+a p {
+    padding-top: 5px;
+}
+
+.tile a:hover {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.row{
+    margin: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.resize{
+    height: 210px;
+    width: 210px;
+    object-fit: cover;
+}
+
+.displaybox{
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    padding-bottom: 1.5%;
+}
+
+.truncate {
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media screen and (min-width: 2560px) {
+    .logo a {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left; 
+    }
+
+    .top-page {
+        display:inline-block;
+    }
+
+    .mobileimg {
+        display:none;
+    }
+
+    .logo a {
+        font-size: 15vw;
+    }
+
+    .tile {
+        padding: 0;
+        display: inline block;
+    }
+
+    li{
+        margin-bottom: 14px;
+    }
+
+    .row{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .displaybox{
+        min-width: 250px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .truncate {
+        width: 200px;
+    }
+}
