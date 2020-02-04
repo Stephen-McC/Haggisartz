@@ -1,12 +1,9 @@
 <?php
   require '../inc/json.php';
-?>
-
-<?php
   include '../inc/head.inc.php';
 ?>
 
-<section class="container-fluid">
+<section class="container-fluid section">
   <ul class="unstyled">
     <div class="row justify-content-md-center">
       <?php

@@ -33,7 +33,6 @@ a:hover {
 
 .logo {
     font-family: 'Marck Script', cursive;
-    src: url('src/MarckScript-Regular.ttf');
     font-size: 65px;
     line-height: 120px;
 }
@@ -48,13 +47,13 @@ a:hover {
 .navbar {
     width: 100%;
     background-color: #508fe2;
+    color: white;
     overflow: auto;
-  }
+}
   
 .navbar a {
-    float: left;
     font-size: 17px;
-    width: 12.5%;
+    width: 9%;
 }
 
 .unstyled {
@@ -89,8 +88,6 @@ a p {
 
 .row{
     margin: auto;
-    padding-left: 10%;
-    padding-right: 10%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -100,6 +97,15 @@ a p {
     height: 210px;
     width: 210px;
     object-fit: cover;
+}
+
+.largebox{
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 450px;
+    width: 100%;
+    object-fit: contain;
+    padding-bottom: 1.5%;
 }
 
 .displaybox{
@@ -118,22 +124,137 @@ a p {
     text-overflow: ellipsis;
 }
 
+.noLink{
+    text-decoration: none;
+    color: white;
+}
+
+.noLink:hover{
+    color: white;
+    cursor: default;
+}
+
+.bottom-page{
+    width: 100%;
+    margin-bottom: 0px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #3e4346;
+    color:white;
+}
+
+.section{
+    min-height: 582px;
+}
+
+.back-to-top {
+    display: none;
+}
+
+.icon-bar1, .icon-bar2, .icon-bar3{
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+    margin-top: 9px;
+    transition: 1s;
+}
+
+.change .icon-bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+    background-color: lightgray;
+}
+  
+.change .icon-bar2 {
+    background-color: lightgray;
+    opacity: 0;
+}
+
+.change .icon-bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+    background-color: lightgray;
+}
+
+.footerText{
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+
+@media screen and (min-width: 780px) {
+    .break{
+        display:none;
+    } 
+}
+
 @media screen and (min-width: 2560px) {
     .logo a {
         font-size: 4vw;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 780px) {
+    body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .navbar a {
-        float: none;
+        width: 15%;
+    }
+    
+    .back-to-top {
+        background-color: blue;
+        color: red;
+        opacity: 0;
+        transition: opacity .6s ease-in-out;
+        z-index: 999;
+        position: fixed;
+        right: 20px;
+        bottom: 35px;
+        width: 50px;
+        height: 50px;
+        box-sizing: border-box;
+        border-radius: 50%;
+    }
+    
+    a.back-to-top {
+        font-weight: 1000;
+        letter-spacing: 2px;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1.6;
+        padding-left: 7px;
+        padding-top: 14px;
+    }
+
+    .back-to-top.show {
+        opacity: 1;
+    }
+
+    .copyright{
+        padding: 20px 0 20px 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section{
+        display:none;
+    }
+    
+    .sticky {
+        position: fixed;
+        top: 0;
+    }
+    
+    .navbar a {
         display: block;
         width: 100%;
         text-align: left; 
-    }
-
-    .top-page {
-        display:inline-block;
     }
 
     .mobileimg {
@@ -153,11 +274,6 @@ a p {
         margin-bottom: 14px;
     }
 
-    .row{
-        padding-left: 0;
-        padding-right: 0;
-    }
-
     .displaybox{
         min-width: 250px;
         padding-left: 0;
@@ -166,5 +282,10 @@ a p {
 
     .truncate {
         width: 200px;
+    }
+    
+    .bottom-page {
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 }

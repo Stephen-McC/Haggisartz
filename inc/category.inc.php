@@ -6,7 +6,7 @@ foreach($catArray as $value){
     <div class="tile">
       <div class="text-center category-drop">
         <a href="' . $value . 's.php">
-          <img src="https://via.placeholder.com/210" alt="test category" class="center resize" height="210" width="210">
+          <img src="https://via.placeholder.com/210" alt=""' . $value . 's" class="center resize">
           <p>' . $value . 's</p>
         </a>
       </div>
@@ -19,7 +19,7 @@ echo
   <div class="tile">
     <div class="text-center category-drop">
       <a href="others.php">
-        <img src="https://via.placeholder.com/210" alt="test category" class="center resize" height="210" width="210">
+        <img src="https://via.placeholder.com/210" alt="test category" class="center resize">
         <p>Others</p>
       </a>
     </div>
@@ -31,7 +31,7 @@ echo
   <div class="tile">
     <div class="text-center category-drop">
       <a href="#">
-        <img src="https://via.placeholder.com/210" alt="test category" class="center resize" height="210" width="210">
+        <img src="https://via.placeholder.com/210" alt="test category" class="center resize">
         <p>Others</p>
       </a>
     </div>
@@ -43,7 +43,7 @@ echo
   <div class="tile">
     <div class="text-center category-drop">
       <a href="#">
-        <img src="https://via.placeholder.com/210" alt="test category" class="center resize" height="210" width="210">
+        <img src="https://via.placeholder.com/210" alt="test category" class="center resize">
         <p>Others</p>
       </a>
     </div>
@@ -55,7 +55,7 @@ echo
   <div class="tile">
     <div class="text-center category-drop">
       <a href="#">
-        <img src="https://via.placeholder.com/210" alt="test category" class="center resize" height="210" width="210">
+        <img src="https://via.placeholder.com/210" alt="test category" class="center resize">
         <p>Others</p>
       </a>
     </div>
@@ -67,7 +67,7 @@ echo
   <div class="tile">
     <div class="text-center category-drop">
       <a href="#">
-        <img src="https://via.placeholder.com/210" alt="test category" class="center resize" height="210" width="210">
+        <img src="https://via.placeholder.com/210" alt="test category" class="center resize">
         <p>Others</p>
       </a>
     </div>
@@ -79,7 +79,7 @@ echo
   <div class="tile">
     <div class="text-center category-drop">
       <a href="#">
-        <img src="https://via.placeholder.com/210" alt="test category" class="center resize" height="210" width="210">
+        <img src="https://via.placeholder.com/210" alt="test category" class="center resize">
         <p>Others</p>
       </a>
     </div>
@@ -91,7 +91,7 @@ echo
   <div class="tile">
     <div class="text-center category-drop">
       <a href="#">
-        <img src="https://via.placeholder.com/210" alt="test category" class="center resize" height="210" width="210">
+        <img src="https://via.placeholder.com/210" alt="test category" class="center resize">
         <p>Others</p>
       </a>
     </div>
@@ -103,12 +103,10 @@ echo
   <div class="tile">
     <div class="text-center category-drop">
       <a href="#">
-        <img src="https://via.placeholder.com/210" alt="test category" class="center resize" height="210" width="210">
+        <img src="https://via.placeholder.com/210" alt="test category" class="center resize">
         <p>Others</p>
       </a>
     </div>
   </div>
 </li>';
 ?>
-
-<!-- col-xs-12 col-sm-4  -->
