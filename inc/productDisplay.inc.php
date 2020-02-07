@@ -1,5 +1,4 @@
 <?php
-
 echo 
 '<li class="displaybox">
     <div class="tile">

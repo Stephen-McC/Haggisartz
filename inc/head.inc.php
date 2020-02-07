@@ -42,19 +42,11 @@
                 </button>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
-                    <a href="home.php">Home</a>
-                    <a href="home.php">Home</a>
-                    <a href="home.php">Home</a>
-                    <a href="home.php">Home</a>
-                    <a href="home.php">Home</a>
-                    <a href="home.php">Home</a>
-                    <a href="home.php">Home</a> 
-                    <a href="home.php">Home</a>     
-                    <a href="home.php">Home</a>               
+                    <a href="home.php">Home</a>            
                     ';
                 foreach($catArray as $value){
                     echo(
-                    '<a href="' . $value . 's.php">' . $value . 's</a>'
+                    '<a href="category.php?cat=' . $value . '">' . $value . '</a>'
                     );
                 }
         echo
@@ -63,6 +55,6 @@
         </nav>';
     ?> 
 
-<a href="#" id="back-to-top" class="back-to-top">Top</a>
+<a href="#" id="back-to-top" class="back-to-top">^</a>
     
     

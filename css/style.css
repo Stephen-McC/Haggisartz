@@ -1,5 +1,5 @@
 body{
-    background-color: #f5f5f5;
+    background-color: white;
     color: black;
     font-family:Verdana;
 }
@@ -49,11 +49,11 @@ a:hover {
     background-color: #508fe2;
     color: white;
     overflow: auto;
+    display: flex;
 }
   
 .navbar a {
     font-size: 17px;
-    width: 9%;
 }
 
 .unstyled {
@@ -61,7 +61,7 @@ a:hover {
 }
 
 .tile {
-    background-color: white;
+    background-color: rgba(80, 143, 226, 0.05);
     border:1px solid #dcdcdc
 }
 
@@ -145,11 +145,7 @@ a p {
 }
 
 .section{
-    min-height: 582px;
-}
-
-.back-to-top {
-    display: none;
+    padding-bottom: 15px;
 }
 
 .icon-bar1, .icon-bar2, .icon-bar3{
@@ -182,6 +178,11 @@ a p {
     text-decoration: none;
     display: inline-block;
     color: white;
+}
+
+.back-to-top{
+    padding: 0;
+    display: none;
 }
 
 @media screen and (min-width: 780px) {
