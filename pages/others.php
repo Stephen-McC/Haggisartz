@@ -1,14 +1,11 @@
 <?php
   require '../inc/json.php';
-?>
-
-<?php
   include '../inc/head.inc.php';
 ?>
 
-<section class="container-fluid">
-  <ul class="unstyled">
-    <div class="row justify-content-md-center">
+<section class='container-fluid section'>
+  <ul class='unstyled'>
+    <div class='row justify-content-md-center'>
       <?php
         require '../inc/other.inc.php';
       ?>
