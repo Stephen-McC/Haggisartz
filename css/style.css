@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'marck_scriptregular';
+    src: url('../src/marckscript-regular-webfont.woff2') format('woff2'),
+         url('../src/marckscript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body{
     background-color: white;
     color: black;
@@ -19,7 +28,7 @@ a{
 
 a:link, a:visited {
     color:white;
-    padding: 20px 25px;
+    padding: 14px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -32,7 +41,7 @@ a:hover {
 }
 
 .logo {
-    font-family: 'Marck Script', cursive;
+    font-family: 'marck_scriptregular';
     font-size: 65px;
     line-height: 120px;
 }
@@ -144,7 +153,7 @@ a p {
     color:white;
 }
 
-.section{
+.featureImage{
     padding-bottom: 15px;
 }
 
@@ -183,6 +192,57 @@ a p {
 .back-to-top{
     padding: 0;
     display: none;
+    position: fixed;
+}
+
+.modal {
+    display: none; 
+    flex-direction: column;
+    justify-content: flex-start;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    margin-left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    display: flex; 
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.modal-tile{
+    width: 100%;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.resizeModal{
+    height: 325px;
+    width: 325px;
+    object-fit: cover;
+}
+
+.modal-text{
+
 }
 
 @media screen and (min-width: 780px) {
@@ -202,20 +262,15 @@ a p {
         padding-left: 0;
         padding-right: 0;
     }
-
-    .navbar a {
-        width: 15%;
-    }
     
     .back-to-top {
-        background-color: blue;
-        color: red;
+        background-color: #508fe2;
         opacity: 0;
         transition: opacity .6s ease-in-out;
         z-index: 999;
         position: fixed;
         right: 20px;
-        bottom: 35px;
+        bottom: 50px;
         width: 50px;
         height: 50px;
         box-sizing: border-box;
@@ -229,7 +284,7 @@ a p {
         text-transform: uppercase;
         text-align: center;
         line-height: 1.6;
-        padding-left: 7px;
+        padding: 0;
         padding-top: 14px;
     }
 
@@ -243,7 +298,7 @@ a p {
 }
 
 @media screen and (max-width: 600px) {
-    .section{
+    .featureImage{
         display:none;
     }
     
@@ -253,9 +308,9 @@ a p {
     }
     
     .navbar a {
-        display: block;
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        text-align: left; 
     }
 
     .mobileimg {
@@ -268,7 +323,6 @@ a p {
 
     .tile {
         padding: 0;
-        display: inline block;
     }
 
     li{
@@ -288,5 +342,27 @@ a p {
     .bottom-page {
         flex-direction: column;
         justify-content: space-evenly;
+    }
+
+    .navbar-header{
+        display:flex;
+        justify-content: center;
+    }
+
+    .navbar-toggle{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .modal-content {
+        width: 100%;
+    }
+
+    .resizeModal{
+        height: 210px;
+        width: 210px;
+        object-fit: cover;
     }
 }

@@ -6,6 +6,8 @@
 
   $products = array();
 
+  $sizeof = $etsyPull["count"];
+
   foreach($etsyPull['results'] as $key => $value){  
 
     $products[$key] = $etsyPull['results'][$key];

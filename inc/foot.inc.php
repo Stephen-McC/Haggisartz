@@ -2,7 +2,7 @@
 
 social media?
 
-footer (contact, about, terms, reviews)
+footer (contact, about, reviews - pages)
 
 -->
     <footer>
@@ -11,8 +11,6 @@ footer (contact, about, terms, reviews)
                 <a href="#">Contact Us</a>
                 <p class="footerText"> | </p>
                 <a href="#">About Us</a>
-                <p class="footerText"> | </p>
-                <a href="#">Terms and Conditions</a>
                 <p class="footerText"> | </p>
                 <a href="#">Reviews</a>
 
@@ -33,9 +31,11 @@ footer (contact, about, terms, reviews)
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
         <!--Custom JavaScript-->
+        <script type="text/javascript" src="../js/modal.js"></script> 
         <script type="text/javascript" src="../js/stick.js"></script>
         <script type="text/javascript" src="../js/back-to-top.js"></script> 
         <script type="text/javascript" src="../js/icon-bar.js"></script> 
+        
 
     </footer>
 
